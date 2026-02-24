@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel>
+            <TextBox x:Name="TbNumberOne"/>
+            <TextBox x:Name="TbNumberTwo"/>
+            <Button x:Name="BtAdd" Click="BtAdd_Click"
+                    Content="Сложить"/>
+            <TextBlock x:Name="TblResult"/>
+        </StackPanel>
     </Grid>
 </Window>

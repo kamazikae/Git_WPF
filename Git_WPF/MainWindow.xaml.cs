@@ -9,16 +9,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Git_WPF
+namespace Git_WPF;
+
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
+
+    private void BtAdd_Click(object sender, RoutedEventArgs e)
+    {
+        int numberOne = int.Parse(TbNumberOne.Text);
+        int numberTwo = int.Parse(TbNumberTwo.Text);
+        int res = numberOne + numberTwo;
+        TblResult.Text = $"Результат - {res}";
     }
 }
