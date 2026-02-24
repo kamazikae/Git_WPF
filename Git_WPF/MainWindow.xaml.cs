@@ -23,6 +23,6 @@ public partial class MainWindow : Window
         int numberOne = int.Parse(TbNumberOne.Text);
         int numberTwo = int.Parse(TbNumberTwo.Text);
         int res = numberOne + numberTwo;
-        TblResult.Text = $"Результат - {res}";
+        TblResult.Text = $"Результат сложения - {res}";
     }
 }
