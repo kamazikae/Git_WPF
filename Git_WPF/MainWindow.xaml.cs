@@ -25,4 +25,12 @@ public partial class MainWindow : Window
         int res = numberOne + numberTwo;
         TblResult.Text = $"Результат сложения - {res}";
     }
+
+    private void BtMultiply_Click(object sender, RoutedEventArgs e)
+    {
+        int numberOne = int.Parse(TbNumberOne.Text);
+        int numberTwo = int.Parse(TbNumberTwo.Text);
+        int res = numberOne + numberTwo;
+        TblResult.Text = $"Умножить - {res}";
+    }
 }
